@@ -53,6 +53,7 @@ public class SpringSecurity {
 
 
     @Bean
+    @Lazy
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
