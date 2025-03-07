@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: JournalApp
+  data:
+    mongodb:
+      uri: mongodb+srv://pravin:Pravin123@cluster0.0lgoe.mongodb.net/ineuron_mongodb?retryWrites=true&w=majority&appName=Cluster0
+      database: JournalDb
+      auto-index-creation: true
+  main:
+    allow-circular-references: true
+
+server:
+    port: 8080
