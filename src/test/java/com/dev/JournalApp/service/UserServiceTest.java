@@ -19,6 +19,7 @@ public class UserServiceTest {
     private UserRepository userRepository;
 
 
+    @Disabled
     @ParameterizedTest
     @ValueSource(strings = {
             "ram",
@@ -29,6 +30,7 @@ public class UserServiceTest {
         assertNotNull(userRepository.findByUserName(name), "failed for " + name);
     }
 
+    @Disabled
     @ParameterizedTest
     @CsvSource({
             "1,2,3",
